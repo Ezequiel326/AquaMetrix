@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dropdown Example</title>
+  <link rel="shortcut icon" href="Logotipo.png" type="image/x-icon">
+  <style>
+    /* Estilos para todas las pantallas */
+    h1 {
+      font-family: 'Alice', serif;
+      font-size: 2em; 
+      color: #003366; 
+      text-align: center; 
+      margin-bottom: 10px; 
+      position:relative;
+      top: -50px;
+      right: -150px;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: lightblue;
+      height: 85vh; 
+      margin: 0; 
+      font-family: 'Alice', serif; 
+    }
+    .container {
+      display: flex;
+      flex-direction: column; 
+      gap: 15px; 
+      text-align: center; 
+      font-family: 'Alice', serif; 
+      width: 80%; /* Adjust width as needed */
+      margin: 0 auto; /* Center the container */
+    }
+    select {     
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%; /* Make select take full width */
+      font-family: 'Alice', serif; 
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50; 
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: 'Alice', serif; 
+      width: 100%; /* Make button take full width */
+    }
+    #infoButton { 
+      position: fixed; 
+      top: 10px; 
+      right: 10px; 
+      font-family: 'Alice', serif; 
+      width: 40px; 
+      height: 40px; 
+      border-radius: 50%; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      font-size: 18px; 
+      padding: 0; 
+    }
+    .input-group {
+      display: flexbox;
+      flex-direction: column;
+      gap: 5px; 
+      font-family: 'Alice', serif; 
+    }
+    /* Estilos para pantallas móviles (menos de 768 píxeles de ancho) */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5em; 
+      }
+      h3 {
+        font-size: 1em; 
+      }
+      button {
+        padding: 8px 16px; 
+      }
+      img {
+        max-width: 100%;
+        height: auto; 
+        object-fit: cover; 
+      }
+    }
+  </style>
+</head>
+<body>
+   <img src="Flor1.png" alt="Flor" style="position: fixed; top: 10px; left: 10px; width: 150px; height: 150px;">
+  <img src="Flor3.png" alt="Flor" style="position: fixed; bottom: 10px; right: 10px; width: 200px; height: 200px;">
+  <img src="Flor2.png" alt="Flor" style="position: fixed; bottom: 10px; left: 10px; width: 200px; height: 200px;">
+  <div class="container">
+    <h1>AquaMetrix</h1>
+   <button id="infoButton">?</button>
+    <div class="input-group">
+      <h3>Tipo de Plantas</h3>
+      <select id="dropdown1">
+        <option value="option1">Brocoli</option>
+        <option value="option2">Lechuga</option>
+        <option value="option3">Coliflor</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <h3>Tipo de Peces</h3>
+      <select id="dropdown2">
+        <option value="optionA">Tilapia</option>
+        <option value="optionB">Trucha Arco Iri</option>
+        <option value="optionC">Trucha Común</option>
+      </select>
+    </div>
+    <button id="enterButton">Enter</button>
+  </div>
+  <script>
+    document.getElementById('enterButton').addEventListener('click', function() {
+      window.location.href = 'Gay.html';
+    }); 
+    document.getElementById('infoButton').addEventListener('click', function() {
+      window.location.href = 'info.html'; // Corrected path
+    });
+  </script>
+</body>
+</html>

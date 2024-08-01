@@ -1,0 +1,15 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Times New Roman', serif; 
+}
+/* Styles for screens smaller than 768px (common breakpoint for mobile) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5em; /* Make the title smaller */
+  }
+  .container {
+    padding: 10px; /* Reduce padding on mobile */
+  }
+  /* Add more styles as needed */
+}
