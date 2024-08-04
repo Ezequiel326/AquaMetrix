@@ -4,7 +4,7 @@
   <title>Dropdown Example</title>
   <link rel="shortcut icon" href="Logotipo.png" type="image/x-icon">
   <style>
-    /* Estilos para todas las pantallas */
+    
     h1 {
       font-family: 'Alice', serif;
       font-size: 2em; 
@@ -30,15 +30,15 @@
       gap: 15px; 
       text-align: center; 
       font-family: 'Alice', serif; 
-      width: 80%; /* Adjust width as needed */
-      margin: 0 auto; /* Center the container */
+      width: 80%; 
+      margin: 0 auto; 
     }
     select {     
       padding: 10px;
       font-size: 16px;
       border: 1px solid #ccc;
       border-radius: 5px;
-      width: 100%; /* Make select take full width */
+      width: 100%; 
       font-family: 'Alice', serif; 
     }
     button {
@@ -50,7 +50,7 @@
       border-radius: 5px;
       cursor: pointer;
       font-family: 'Alice', serif; 
-      width: 100%; /* Make button take full width */
+      width: 100%; 
     }
     #infoButton { 
       position: fixed; 
@@ -72,7 +72,7 @@
       gap: 5px; 
       font-family: 'Alice', serif; 
     }
-    /* Estilos para pantallas móviles (menos de 768 píxeles de ancho) */
+   
     @media (max-width: 768px) {
       h1 {
         font-size: 1.5em; 
@@ -101,27 +101,43 @@
     <div class="input-group">
       <h3>Tipo de Plantas</h3>
       <select id="dropdown1">
-        <option value="option1">Brocoli</option>
-        <option value="option2">Lechuga</option>
-        <option value="option3">Coliflor</option>
+        <option value="option1">Brocoli (Brassica oleracea var. italica)</option>
+        <option value="option2">Lechuga (Lactuca sativa)</option>
+        
+        <option value="option3">Espinaca (Spinacia oleracea)</option>
+        <option value="option3">Coliflor (Brassica oleracea var. botrytis)</option>
+        <option value="option3">Berenjena (Solanum melongena)</option>
+        <option value="option3">Cilantro (Coriandrum sativum)</option>
+        <option value="option3">Pepinos (Cucumis sativus)</option>
+        <option value="option3">Tomates (Solanum lycopersicum)</option>
+        <option value="option3">Repollo (Brassica oleracea var. capitata)</option>
+        <option value="option3">Albahaca (Ocimum basilicum
+)</option>
+        
       </select>
     </div>
     <div class="input-group">
       <h3>Tipo de Peces</h3>
       <select id="dropdown2">
-        <option value="optionA">Tilapia</option>
-        <option value="optionB">Trucha Arco Iri</option>
-        <option value="optionC">Trucha Común</option>
+        <option value="optionA">Tilapia (Oreochromis)</option>
+        
+        <option value="optionB">Trucha Arco Iri (Oncorhynchus mikyss)</option>
+        <option value="optionC">Carpa Común (Cyprinus carpio)</option>
+        <option value="optionD">Cabeza chata (Mugil cephalus)</option>
+        <option value="optionD">Bagre (Ictalurus punctatus)</option>
+        <option value="optionD">Goldfish (Carassius auratus)</option>
+        <option value="optionD">Pez Betta (Betta splendens)</option>
+        <option value="optionD">Bagre africano (Clarias gariepinus)</option>
       </select>
     </div>
     <button id="enterButton">Enter</button>
   </div>
   <script>
     document.getElementById('enterButton').addEventListener('click', function() {
-      window.location.href = 'Gay.html';
+      window.location.href = 'parametros.html';
     }); 
     document.getElementById('infoButton').addEventListener('click', function() {
-      window.location.href = 'info.html'; // Corrected path
+      window.location.href = 'info.html'; 
     });
   </script>
 </body>
